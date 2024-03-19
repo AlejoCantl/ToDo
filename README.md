@@ -32,8 +32,5 @@ Una vez instalado, puedes acceder al sistema de gestión de tareas desde tu nave
 ## Créditos:
 - Este proyecto fue inspirado en [https://platzi.com/].
 
-## Licencia:
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
-
 ## Contacto:
 Si tienes preguntas, sugerencias o problemas, no dudes en contactarme a través de mi correo electrónico: alejandrocantillop.ilusa@gmail.com
