@@ -1,0 +1,86 @@
+ul li {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 4fr 1fr;
+    border-radius: 10px;
+    padding: 10px; /* Ajusta el padding según sea necesario */
+}
+
+ul > li {
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgb(44, 162, 123);
+    color: black;
+    font-weight: 500;
+}
+
+ul > li:hover {
+    background-color: rgb(64, 184, 145);
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+ul > li > div > p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Centra el contenedor en la página */
+    background-color: yellowgreen;
+    border-radius: 10px;
+    overflow: hidden; /* Oculta el desbordamiento horizontal de la lista */
+
+}
+
+ul{
+    width: 90%;
+    margin-left: -40px;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    max-height: 500px; /* Establece una altura máxima para el desplazamiento, ajusta según sea necesario */
+    padding-right: 35px;
+    padding-left: 80px;
+    /*scrollbar-gutter: 20px; Ajusta el valor según sea necesario */
+
+}
+
+ul > li > div > span {
+    cursor: pointer;
+    margin-right: 5px; /* Ajusta el margen según sea necesario */
+    font-size: 1.5rem;
+}
+
+ul > li > div > span:hover {
+    color: red;
+}
+
+ul>li>.completed{
+text-decoration: line-through;
+}
+
+/* Estilo para WebKit (Chrome, Safari) */
+ul::-webkit-scrollbar {
+    width: 10px; /* Ajusta el ancho de la barra según sea necesario */
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color del fondo de la barra de desplazamiento */
+    border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+/* Estilo para Firefox */
+ul {
+    scrollbar-width: thin; /* Oculta la barra de desplazamiento de Firefox por defecto */
+}
+
+ul::-moz-scrollbar {
+    width: 12px; /* Ajusta el ancho de la barra según sea necesario */
+}
+
+ul::-moz-scrollbar-thumb {
+    background-color: #555; /* Color del fondo de la barra de desplazamiento */
+    border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}

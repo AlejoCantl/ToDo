@@ -1,0 +1,11 @@
+.barra{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    gap: 10px;
+}
+
+#buscar{
+    border-radius: 10px;
+    background-color: #ededed;
+    color: black;
+}

@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  
+  .enlace {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .enlace:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8d1f1f; /* Color del borde inferior */
+    transform-origin: right; /* El punto de transformación está en el extremo derecho */
+    transform: scaleX(0); /* Inicialmente sin longitud */
+    transition: transform 0.3s ease; /* Agregar una transición suave para el cambio de longitud */
+  }
+  
+  .enlace:hover:after, .enlace.active:after {
+    transform-origin: left; /* Al pasar el ratón, el punto de transformación se cambia al extremo izquierdo */
+    transform: scaleX(1); /* Mostrar la longitud completa al pasar el ratón o cuando el enlace está activo */
+  }
+  
+ 
